@@ -16,7 +16,6 @@ import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Loader from "../layout/Loader/Loader";
 import SideBar from "./SideBar";
-import { Typography } from "@mui/material";
 
 const ProductList = () => {
   const dispatch = useDispatch();
