@@ -1,6 +1,6 @@
 MERN E-COMMERCE
 
-Hi! My name is Remon roy, I have created this Project.
+Hi! My name is Remon roy, I have created this Project..
 
 Backend Use Dependencies:
 bcryptjs,
