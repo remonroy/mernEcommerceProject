@@ -16,7 +16,6 @@ import StarIcon from "@mui/icons-material/Star";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Loader from "../layout/Loader/Loader";
 import SideBar from "./SideBar";
-import { Typography } from "@mui/material";
 
 const UserReview = () => {
   const dispatch = useDispatch();
@@ -24,17 +23,15 @@ const UserReview = () => {
   const alert = useAlert();
 
   const { loading, error, reviews } = useSelector((state) => state.allReviews);
-  const {
-    loading: isloading,
-    error: DeletedError,
-    isDeleted,
-  } = useSelector((state) => state.review);
+  const { error: DeletedError, isDeleted } = useSelector(
+    (state) => state.reviews
+  );
 
   const [productId, setProductId] = useState("");
 
   const UserReviewDeleteHandler = (id) => {
     // console.log('Reviews id ',id);
-    dispatch(adminDeletedAllReviews(id,productId));
+    dispatch(adminDeletedAllReviews(id, productId));
   };
   const reviewProductSubmitHandler = (e) => {
     e.preventDefault();
@@ -59,7 +56,7 @@ const UserReview = () => {
       navigate("/admin/reviews");
       dispatch({ type: Types.ADMIN_ALL_REVIEW_DELETED_RESET });
     }
-  }, [dispatch, error, alert, navigate, DeletedError, isDeleted,productId]);
+  }, [dispatch, error, alert, navigate, DeletedError, isDeleted, productId]);
   const rows = [];
   const columns = [
     {

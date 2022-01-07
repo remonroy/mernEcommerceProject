@@ -3,7 +3,7 @@ import "./NewProduct.css";
 import * as Types from "../Store/action/types";
 import { useSelector, useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
-import { Button } from "@material-ui/core";
+
 import { useNavigate } from "react-router-dom";
 import MetaData from "../layout/MetaData";
 import AccountTreeIcon from "@mui/icons-material/AccountTree";
@@ -77,13 +77,13 @@ const NewProduct = () => {
       reader.readAsDataURL(file);
     });
   };
-  
 
   return (
     <Fragment>
       <div className="dashboard">
         <SideBar />
         <div className="createProductContainer">
+          <MetaData title="Create product --Admin" />
           <form
             className="createProductForm"
             encType="multipart/form-data"

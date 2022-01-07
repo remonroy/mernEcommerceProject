@@ -1,6 +1,6 @@
 import React, { Fragment, useState, useEffect } from "react";
 import * as Types from "../Store/action/types";
-import { useNavigate, Navigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./UpdateProfile.css";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import FaceIcon from "@mui/icons-material/Face";

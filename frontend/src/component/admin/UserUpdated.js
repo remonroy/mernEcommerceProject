@@ -3,9 +3,9 @@ import "./NewProduct.css";
 import * as Types from "../Store/action/types";
 import { useSelector, useDispatch } from "react-redux";
 import { useAlert } from "react-alert";
-import { Button } from "@material-ui/core";
+
 import { useNavigate, useParams } from "react-router-dom";
-import MetaData from "../layout/MetaData";
+
 import PersonIcon from "@mui/icons-material/Person";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import VerifiedUserIcon from "@mui/icons-material/VerifiedUser";
@@ -22,9 +22,7 @@ const UserUpdated = () => {
   const { id } = useParams();
   const navigate = useNavigate();
 
-  const { loading, error, user } = useSelector(
-    (state) => state.adminDetailsUser
-  );
+  const { error, user } = useSelector((state) => state.adminDetailsUser);
   const {
     loading: updatedLoading,
     error: updatedError,

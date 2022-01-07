@@ -1,5 +1,5 @@
 import React, { Fragment, useRef, useState, useEffect } from "react";
-import { Link, useNavigate, useLocation, Navigate } from "react-router-dom";
+import { Link, useNavigate, useLocation } from "react-router-dom";
 import "./LoginSignUp.css";
 import MailOutlineIcon from "@mui/icons-material/MailOutline";
 import LockOpenIcon from "@mui/icons-material/LockOpen";
@@ -65,14 +65,6 @@ const LoginSignUp = () => {
       setUser({ ...user, [e.target.name]: e.target.value });
     }
   };
-  // const redirect = location.search ? location.search.split("=")[1] : "/account";
-  // const redirect = location.search
-  //   ? location.pathname.replace("/login", "/shipping")
-  //   : "/account";
-
-  // const pat =()=>{
-  //   return location.pathname(0,6)
-  // }
 
   useEffect(() => {
     if (error) {

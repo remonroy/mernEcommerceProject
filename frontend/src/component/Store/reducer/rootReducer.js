@@ -42,7 +42,7 @@ const reducer = combineReducers({
   adminAllUser: adminAllUserReducer,
   adminDetailsUser: adminAllUserDetailsReducer,
   allReviews: adminGetAllReviews,
-  review: adminDeletedAllReviews,
+  reviews: adminDeletedAllReviews,
 });
 
 export default reducer;

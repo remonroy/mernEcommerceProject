@@ -1,8 +1,8 @@
 import React from "react";
 import "./About.css";
 import { Button, Typography, Avatar } from "@material-ui/core";
-import LinkedInIcon from '@mui/icons-material/LinkedIn';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
+import GitHubIcon from "@mui/icons-material/GitHub";
 const About = () => {
   const visitWebsite = () => {
     window.location = "https://ecstatic-heyrovsky-a21277.netlify.app/";
@@ -22,23 +22,18 @@ const About = () => {
               alt="Founder"
             />
             <Typography>Remon roy</Typography>
-            <Button  target="_blank" onClick={visitWebsite} color="primary">
+            <Button target="_blank" onClick={visitWebsite} color="primary">
               Visit Website
             </Button>
-            <span>
-              I am a MERN Stack developer
-            </span>
+            <span>I am a MERN Stack developer</span>
           </div>
           <div className="aboutSectionContainer2">
             <Typography component="h2">Our Brands</Typography>
-            <a
-              href="https://www.linkedin.com/in/remon-roy/"
-              target="_blank"
-            >
+            <a href="https://www.linkedin.com/in/remon-roy/">
               <LinkedInIcon className="youtubeSvgIcon" />
             </a>
 
-            <a href="https://github.com/remonroy" target="_blank">
+            <a href="https://github.com/remonroy">
               <GitHubIcon className="instagramSvgIcon" />
             </a>
           </div>

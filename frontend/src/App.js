@@ -1,11 +1,6 @@
 import React, { useState, useEffect } from "react";
 import "./App.css";
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Header from "./component/layout/Header/Header";
 import webFont from "webfontloader";
 import Footer from "./component/layout/Footer/Footer";

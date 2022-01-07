@@ -6,17 +6,13 @@ import { Button } from "@material-ui/core";
 import { useSelector, useDispatch } from "react-redux";
 import { Link, useNavigate } from "react-router-dom";
 import { useAlert } from "react-alert";
-import {
-  getAllProductAdmin,
-  clearErrors,
-  adminDeleteProduct,
-} from "../Store/action/productAction";
+import { clearErrors } from "../Store/action/productAction";
 import MetaData from "../layout/MetaData";
 import EditIcon from "@mui/icons-material/Edit";
 import DeleteIcon from "@mui/icons-material/Delete";
 import Loader from "../layout/Loader/Loader";
 import SideBar from "./SideBar";
-import { Typography } from "@mui/material";
+
 import {
   adminGetAllUsers,
   adminGetAllUsersDeleted,

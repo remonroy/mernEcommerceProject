@@ -19,9 +19,7 @@ const CheckoutSteps = ({ activeStep }) => {
       icon: <AccountBalanceIcon />,
     },
   ];
-  const stepStyle = {
-    boxSizing: "border-box",
-  };
+
   return (
     <Fragment>
       <Stepper activeStep={activeStep} alternativeLabel>
