@@ -18,7 +18,7 @@ const About = () => {
           <div>
             <Avatar
               style={{ width: "10vmax", height: "10vmax", margin: "2vmax 0" }}
-              src="https://res.cloudinary.com/bangla-company/image/upload/v1641197492/avators/k8nztpild015f2kroh1s.jpg"
+              src="https://res.cloudinary.com/bangla-company/image/upload/v1641456449/avators/xogqdaw7r1tgv54gh4wn.jpg"
               alt="Founder"
             />
             <Typography>Remon roy</Typography>

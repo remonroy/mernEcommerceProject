@@ -24,7 +24,7 @@ exports.userRegister = catchAsyncErrors(async (req, res, next) => {
       url: myCloud.secure_url,
     },
   });
-  const message = "Happy journey MaMa...!";
+  const message = "Happy journey ...!";
   await sendEmail({
     email: user.email,
     subject: "E-commerce create Your account.",
