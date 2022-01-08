@@ -49,12 +49,12 @@ const Dashboard = () => {
     dispatch(adminGetAllUsers());
   }, [dispatch]);
 
-  let totalAmount =0;
+  let totalAmount = 0;
 
-  orders && orders.forEach(item =>{
-    totalAmount +=item.totalPrice
-
-  })
+  orders &&
+    orders.forEach((item) => {
+      totalAmount += item.totalPrice;
+    });
 
   const lineState = {
     labels: ["Initial Amount", "Amount Earned"],
